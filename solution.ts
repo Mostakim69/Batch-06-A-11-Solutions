@@ -126,3 +126,22 @@ const getUniqueValues = (arr1: ArrayType[], arr2: ArrayType[]): ArrayType[] => {
 };
 
 
+//s08
+
+type Product = {
+  name: string;
+  price: number;
+  quantity: number;
+  discount?: number;
+};
+
+const calculateTotalPrice = (products: Product[]): number => {
+  return products.reduce((total, product) => {
+    const totalPrice = product.price * product.quantity;
+    const discountedTotalPrice = product.discount
+      ? totalPrice * (1 - product.discount / 100)
+      : totalPrice;
+    return total + discountedTotalPrice;
+  }, 0);
+};
+

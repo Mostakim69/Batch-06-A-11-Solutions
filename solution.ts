@@ -61,3 +61,15 @@ const filterByRating = (arrayWithObj: Item[]): Item[] => {
 };
 
 
+//s5
+
+type Users = {
+  id: number;
+  name: string;
+  email: string;
+  isActive: boolean;
+};
+
+const filterActiveUsers = (arrayOfUserObj: Users[]): Users[] => {
+  return arrayOfUserObj.filter((user) => user.isActive);
+};

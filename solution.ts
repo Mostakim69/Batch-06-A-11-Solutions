@@ -1,7 +1,3 @@
-// Solution All problems
-
-//Solution 01 
-
 type inputType = string | number | boolean;
 
 const formatValue = (input: inputType): inputType => {
@@ -18,7 +14,6 @@ const formatValue = (input: inputType): inputType => {
 };
 
 
-//solution 02
 
 type paraType = string | any[];
 
@@ -33,7 +28,6 @@ const getLength = (input: paraType): number => {
 };
 
 
-// s3
 
 class Person {
   name: string;
@@ -49,7 +43,7 @@ class Person {
   }
 }
 
-//s4
+
 
 type Item = {
   title: string;
@@ -61,7 +55,6 @@ const filterByRating = (arrayWithObj: Item[]): Item[] => {
 };
 
 
-//s5
 
 type Users = {
   id: number;
@@ -75,7 +68,6 @@ const filterActiveUsers = (arrayOfUserObj: Users[]): Users[] => {
 };
 
 
-//s06
 
 interface Book {
   title: string;
@@ -90,7 +82,7 @@ const printBookDetails = (book: Book): void => {
   );
 };
 
-//s07
+
 
 type ArrayType = string | number;
 
@@ -126,7 +118,7 @@ const getUniqueValues = (arr1: ArrayType[], arr2: ArrayType[]): ArrayType[] => {
 };
 
 
-//s08
+
 
 type Product = {
   name: string;
@@ -144,4 +136,3 @@ const calculateTotalPrice = (products: Product[]): number => {
     return total + discountedTotalPrice;
   }, 0);
 };
-

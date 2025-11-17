@@ -45,7 +45,7 @@ class Person {
   }
 
   getDetails(): string {
-    return `Name: ${this.name}, Age: ${this.age}`;
+    return `'Name: ${this.name}, Age: ${this.age}'`;
   }
 }
 
@@ -72,4 +72,20 @@ type Users = {
 
 const filterActiveUsers = (arrayOfUserObj: Users[]): Users[] => {
   return arrayOfUserObj.filter((user) => user.isActive);
+};
+
+
+//s06
+
+interface Book {
+  title: string;
+  author: string;
+  publishedYear: number;
+  isAvailable: boolean;
+}
+
+const printBookDetails = (book: Book): void => {
+  console.log(
+    `Title: ${book.title}, Author: ${book.author}, Published: ${book.publishedYear}, Available: ${book.isAvailable ? "Yes" : "No"}`
+  );
 };

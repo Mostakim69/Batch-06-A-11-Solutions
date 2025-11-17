@@ -31,3 +31,20 @@ const getLength = (input: paraType): number => {
     throw new Error("Wrong Input");
   }
 };
+
+
+// s3
+
+class Person {
+  name: string;
+  age: number;
+
+  constructor(name: string, age: number) {
+    this.name = name;
+    this.age = age;
+  }
+
+  getDetails(): string {
+    return `Name: ${this.name}, Age: ${this.age}`;
+  }
+}

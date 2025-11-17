@@ -16,3 +16,18 @@ const formatValue = (input: inputType): inputType => {
   }
     return input;
 };
+
+
+//solution 02
+
+type paraType = string | any[];
+
+const getLength = (input: paraType): number => {
+  if (typeof input === "string") {
+    return input.length;
+  } else if (Array.isArray(input)) {
+    return input.length;
+  } else {
+    throw new Error("Wrong Input");
+  }
+};

@@ -48,3 +48,16 @@ class Person {
     return `Name: ${this.name}, Age: ${this.age}`;
   }
 }
+
+//s4
+
+type Item = {
+  title: string;
+  rating: number;
+};
+
+const filterByRating = (arrayWithObj: Item[]): Item[] => {
+  return arrayWithObj.filter((item) => item.rating >= 4);
+};
+
+
